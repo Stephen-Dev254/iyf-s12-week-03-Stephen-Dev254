@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Stephen Muriu</title>
+  <title>Home | Stephen Muriu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,15 +13,25 @@
   <!-- ========================================== -->
   <header>
     <h1>Stephen Muriu</h1>
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html" aria-current="page">About Me</a></li>
+        <li><a href="index.html" aria-current="page"><strong>Home</strong></a></li>
+        <li><a href="pages/about.html">About Me</a></li>
         <li><a href="pages/projects.html">Projects</a></li>
         <li><a href="pages/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- DAY 3: Hero Section Challenge -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm Stephen Muriu</h1>
+      <p>Frontend Developer building secure, API-driven web apps from Ruiru, Kenya</p>
+      <button class="btn-primary">View My Work</button>
+    </div>
+  </section>
 
   <main>
     <!-- 1. Paragraph introducing yourself - REQUIRED -->
@@ -33,7 +43,8 @@
         I don't just write code — I ship production-ready solutions that solve real problems.
       </p>
     </section>
-        <!-- DAY 2: Card Component Challenge -->
+
+    <!-- DAY 2: Card Component Challenge -->
     <section>
       <h2>Day 2: Card Component 🟢</h2>
       <div class="challenge-card">
@@ -48,12 +59,13 @@
       </div>
     </section>
 
-    <!-- 2. An image - REQUIRED - FIXED: removed line break -->
+    <!-- 2. An image - REQUIRED -->
     <section>
       <h2>My Photo</h2>
       <img src="images/git profile 1.jpg" alt="Stephen Muriu" width="200" height="200">
     </section>
-        <!-- DAY 1: Button Styles Challenge -->
+
+    <!-- DAY 1: Button Styles Challenge -->
     <section>
       <h2>Day 1: Button Styles 🟢</h2>
       <div style="display:flex; gap:10px; flex-wrap:wrap;">
@@ -63,7 +75,6 @@
         <button class="btn-disabled" disabled>Disabled Button</button>
       </div>
     </section>
-
 
     <!-- 3. A list of 3 hobbies or interests - REQUIRED -->
     <section>
@@ -84,12 +95,10 @@
       </p>
     </section>
 
-    <!-- 5. Your contact email (use mailto:) - REQUIRED -->
-    <section>
-      <h2>📧 C    <!-- DAY 4: Form Styling Challenge -->
+    <!-- DAY 4: Form Styling Challenge & Contact Details -->
     <section>
       <h2>📧 Contact Me - Styled Form</h2>
-      <form class="styled-form">
+      <form class="styled-form" action="#" method="POST">
         <label for="name">Your Name</label>
         <input type="text" id="name" placeholder="Stephen Muriu" required>
         
@@ -101,7 +110,7 @@
         
         <button type="submit" class="btn-primary" style="width:100%;">Send Message ✈️</button>
       </form>
-    </section></h2>
+      <br>
       <p>
         Let's build something together! Email me at: 
         <a href="mailto:stephengithaigamuriu@gmail.com">stephengithaigamuriu@gmail.com</a>
@@ -110,21 +119,9 @@
         Or connect on LinkedIn: <a href="https://www.linkedin.com/in/steve-muriu" target="_blank">linkedin.com/in/steve-muriu</a>
       </p>
     </section>
-
   </main>
-      <!-- DAY 3: Hero Section Challenge -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1>Hi, I'm Stephen Muriu</h1>
-        <p>Frontend Developer building secure, API-driven web apps from Ruiru, Kenya</p>
-        <button class="btn-primary">View My Work</button>
-      </div>
-    </section>
 
-  <footer>
-    <hr>
-    <p>  <!-- DAY 5: Footer Design Challenge -->
+  <!-- DAY 5: Footer Design Challenge -->
   <footer>
     <div class="footer-columns">
       <div>
@@ -134,8 +131,8 @@
       <div>
         <h4>Quick Links</h4>
         <ul style="list-style:none; padding:0;">
-          <li><a href="pages/about.html"></a></li>
           <li><a href="index.html" style="color:#ccc;">Home</a></li>
+          <li><a href="pages/about.html" style="color:#ccc;">About Me</a></li>
           <li><a href="pages/projects.html" style="color:#ccc;">Projects</a></li>
           <li><a href="pages/contact.html" style="color:#ccc;">Contact</a></li>
         </ul>
@@ -153,14 +150,13 @@
         <p>🐙 <a href="https://github.com/Stephen-Dev254" style="color:#ccc;">GitHub</a><br>
         💼 <a href="https://www.linkedin.com/in/steve-muriu" style="color:#ccc;">LinkedIn</a><br>
         📧 stephengithaigamuriu@gmail.com<br>
-        📍 Ruiru, Kenya</p>
+        📍 Nairobi, Kenya</p>
       </div>
     </div>
     <div class="copyright-row">
       <hr style="border-color:#444; margin:20px 0;">
       <p style="text-align:center; color:#868e96; font-size:0.875rem;">&copy; 2026 Stephen Muriu | Stephen-Dev254 | Handcrafted with clean semantics.</p>
     </div>
-  </footer></p>
   </footer>
 
 </body>

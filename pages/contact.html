@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me | Stephen Muriu</title>
-    <!-- FIXED: Added ../ to look outside the folder, and added the missing closing angle bracket -->
+    <!-- FIXED: Pulls the stylesheet correctly from the root folder directory -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
-    <!-- ADDED: Navigation menu block to match your projects page structure so you can click back to Home/Projects -->
+    <!-- FIXED Navigation Structure for inside the pages/ folder -->
     <header>
         <h1>Stephen Muriu</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
+                <!-- Steps out to the root folder -->
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="pages/about.html">About Me</a></li>
-                <li><a href="pages/project.html">Projects</a></li>
-                <li><a href="semantic-conversion.html">Semantic Conversion</a></li>
-                <li><a href="pages/contact.html" aria-current="page">Contact</a></li>
+                
+                <!-- Links directly to neighbor files inside the same pages/ folder -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>

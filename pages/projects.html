@@ -4,21 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Stephen Muriu</title>
-  <!-- FIXED: Path corrected to go up one level to find the stylesheet -->
+  <!-- Path corrected to go up one level to find the stylesheet -->
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <header>
     <h1>Stephen Muriu</h1>
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul>
-        <!-- FIXED: Navigation links updated to reflect pages/ folder nesting -->
+        <!-- FIXED: Removed the duplicate 'pages/' paths and corrected project.html filename -->
         <li><a href="../index.html">Home</a></li>
-        <li><a href="pages/about.html">About Me</a></li>
-        <li><a href="pages/project.html" aria-current="page">Projects</a></li>
-        <li><a href="semantic-conversion.html">Semantic Conversion</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" aria-current="page"><strong>Projects</strong></a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -29,37 +28,31 @@
     <!-- Exercise 3: Responsive Grid -->
     <div class="projects-grid">
       <div class="card">
-        <!-- FIXED: Added ../ and kept your exact spelling from explorer -->
         <img src="../images/weather-dashbaord.png" alt="Weather App">
         <h3>Weather Dashboard</h3>
         <p>Secure API-driven app using GitHub Secrets.</p>
       </div>
       <div class="card">
-        <!-- FIXED: Removed the space from "portfolio .png" and added ../ -->
         <img src="../images/portfolio .png" alt="Portfolio">
         <h3>Portfolio Site</h3>
         <p>Responsive site with Flexbox and Grid.</p>
       </div>
       <div class="card">
-        <!-- FIXED: Added ../ -->
         <img src="../images/task-manager.png" alt="Task Manager">
         <h3>Task Manager</h3>
         <p>JavaScript CRUD with localStorage.</p>
       </div>
       <div class="card">
-        <!-- FIXED: Changed "gallery.png" to "gallery-grid.png" to match explorer + added ../ -->
         <img src="../images/gallery-grid.png" alt="Gallery">
         <h3>Photo Gallery</h3>
         <p>Exercise 1: 3-column grid gallery.</p>
       </div>
       <div class="card">
-        <!-- FIXED: Added ../ and matched explorer name exactly -->
         <img src="../images/blog layout.png" alt="Blog">
         <h3>Blog Layout</h3>
         <p>Exercise 2: Magazine layout.</p>
       </div>
       <div class="card">
-        <!-- FIXED: Added ../ -->
         <img src="../images/contact.png" alt="Form">
         <h3>Contact Form</h3>
         <p>Accessible form with validation.</p>
@@ -69,7 +62,6 @@
     <!-- Exercise 1: Photo Gallery Demo -->
     <h2 style="margin-top:40px;">Exercise 1: Photo Gallery (3 columns)</h2>
     <div class="gallery">
-      <!-- FIXED: All paths below updated with ../ and matching filenames -->
       <img src="../images/weather-dashbaord.png" alt="Image 1">
       <img src="../images/portfolio .png" alt="Image 2">
       <img src="../images/task-manager.png" alt="Image 3">
