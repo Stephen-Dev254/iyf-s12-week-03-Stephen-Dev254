@@ -4,11 +4,11 @@ A professional frontend developer portfolio built following specific structural 
 
 ## Live Demo
 
-[View Live Site](https://github.io)
+[View Live Site] https://stephen-dev254.github.io/iyf-s12-week-03-Stephen-Dev254/
 
 ## Screenshot
 
-![Project Screenshot] https://stephen-dev254.github.io/iyf-s12-week-03-Stephen-Dev254/
+![Project Screenshot] 
 
 ## Features
 
