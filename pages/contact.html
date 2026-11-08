@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Stephen Muriu</title>
+    <!-- FIXED: Added ../ to look outside the folder, and added the missing closing angle bracket -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- ADDED: Navigation menu block to match your projects page structure so you can click back to Home/Projects -->
+    <header>
+        <h1>Stephen Muriu</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pages/about.html">About Me</a></li>
+                <li><a href="pages/project.html">Projects</a></li>
+                <li><a href="semantic-conversion.html">Semantic Conversion</a></li>
+                <li><a href="pages/contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Get In Touch</h1>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <p>
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Stephen Githaiga Muriu" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="stephengithaigamuriu@gmail.com" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 712 345 678">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message Details</legend>
+
+                <p>
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Proposal</option>
+                        <option value="support">Technical Support</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message * (Minimum 50 characters)</label>
+                    <textarea id="message" name="message" rows="6" minlength="50" placeholder="Please write your detailed message here..." required></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <p>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Subscribe to our monthly newsletter</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Stephen Muriu | Stephen-Dev254</p>
+    </footer>
+
+</body>
+</html>

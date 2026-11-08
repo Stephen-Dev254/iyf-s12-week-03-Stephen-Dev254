@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Box Model Practice | Stephen Muriu</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    .demo-box { width: 250px; margin: 20px; text-align: center; }
+    /* Exercise 1 */
+    .box-content { background: #ffd8a8; }
+    .box-padding { background: #ffd8a8; padding: 20px; }
+    .box-border { background: #ffd8a8; padding: 20px; border: 5px solid #e8590c; }
+    .box-margin { background: #ffd8a8; padding: 20px; border: 5px solid #e8590c; margin: 40px; }
+
+    /* Exercise 2: Fixed broken box */
+    .broken-box {
+        width: 300px;
+        padding: 20px;
+        border: none;
+        background: #ff8787;
+        /* FIX: border-box includes padding inside width */
+        box-sizing: border-box;
+    }
+
+    /* Exercise 3: Card Component */
+    .card { width: 300px; padding: 20px; border: 1px solid gray; background: white; border-radius: 8px; box-sizing: border-box; }
+    .card img { width: 100%; display: block; margin-bottom: 15px; border-radius: 4px; }
+    .card h3 { margin-bottom: 15px; }
+    .card button { margin-top: 15px; padding: 10px 20px; background: var(--color-primary); color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .card button:hover { background: var(--color-primary-dark); }
+</style>
+</head>
+<body>
+<h1> Box Model Mastery</h1>
+
+<h2>Visualization</h2>
+<div class="demo-box box-content">Content Only</div>
+<div class="demo-box box-padding">+ Padding</div>
+<div class="demo-box box-border">+ Border</div>
+<div class="demo-box box-margin">+ Margin</div>
+
+<h2>Debug (Now 300px total)</h2>
+<div class="broken-box">I am now exactly 300px wide total because box-sizing: border-box</div>
+
+<h2>Card Component (300px total)</h2>
+<div class="card">
+<img src="weather-dashboard.jpg" alt="Project">
+<h3>Weather Dashboard</h3>
+<p>A secure API-driven weather app by Stephen-Dev254</p>
+<button>View Project</button>
+</div>
+
+</body>
+</html>
